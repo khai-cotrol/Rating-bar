@@ -1,0 +1,4 @@
+<div>
+  <p >{{ratingValue}}/{{max}}</p>
+<span class="fa fa-star " *ngFor="let ratingUnit of ratingUnits;let i=index " (click)="select(i) " [class.checked]="ratingUnit.active" (mouseover)="enter(i)"></span>
+</div>
